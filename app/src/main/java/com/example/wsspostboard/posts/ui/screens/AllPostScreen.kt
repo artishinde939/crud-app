@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.PaddingValues
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.fillMaxWidth
+import androidx.compose.foundation.layout.offset
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
@@ -91,7 +92,7 @@ fun AllPostsScreen(
                             color = Color.White, fontFamily = montserratFontFamily,
                             style = MaterialTheme.typography.titleMedium,
                             modifier = Modifier
-                                .fillMaxWidth(), textAlign = TextAlign.Center,
+                                .fillMaxWidth().offset(x = (-9).dp), textAlign = TextAlign.Center,
                             fontWeight = FontWeight.Medium,
                             fontSize = 16.sp
                         )
